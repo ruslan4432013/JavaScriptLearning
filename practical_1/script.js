@@ -42,3 +42,5 @@ lastFilmWatched = prompt('Один из последних просмотрен�
 ratingLastFilmWatched = prompt('На сколько оцените его?', '')
 
 personalMovieDB.movies[lastFilmWatched] = ratingLastFilmWatched
+
+console.log(personalMovieDB)
