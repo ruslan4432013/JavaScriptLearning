@@ -32,3 +32,8 @@ let personalMovieDB = {
     genres: [],
     privat: false
 }
+
+let lastFilmWatched = prompt('Один из последних просмотренных фильмов?', '')
+let ratingLastFilmWatched = prompt('На сколько оцените его?', '')
+
+personalMovieDB.movies[lastFilmWatched] = ratingLastFilmWatched
