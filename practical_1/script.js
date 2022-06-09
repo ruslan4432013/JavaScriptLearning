@@ -23,7 +23,7 @@
 
 'use strict';
 
-let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '')
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
 
 let personalMovieDB = {
     count: numberOfFilms,
@@ -35,5 +35,10 @@ let personalMovieDB = {
 
 let lastFilmWatched = prompt('Один из последних просмотренных фильмов?', '')
 let ratingLastFilmWatched = prompt('На сколько оцените его?', '')
+
+personalMovieDB.movies[lastFilmWatched] = ratingLastFilmWatched
+
+lastFilmWatched = prompt('Один из последних просмотренных фильмов?', '')
+ratingLastFilmWatched = prompt('На сколько оцените его?', '')
 
 personalMovieDB.movies[lastFilmWatched] = ratingLastFilmWatched
